@@ -52,8 +52,11 @@ table {
 }
 
 html, body {
-    height: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,6 +69,22 @@ p {
     line-height: 1.4;
 }
 
+header {
+    margin: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+header nav a {
+    text-decoration: none;
+
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -75,8 +94,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-around;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    height: 350px;
 }
 
 .top-content .text-container {
