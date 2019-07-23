@@ -52,8 +52,11 @@ table {
 }
 
 html, body {
-    height: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,17 +69,65 @@ p {
     line-height: 1.4;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.top-about {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px dashed black;
+    margin: 30px auto;
+    padding-bottom: 20px;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: space-around;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    height: 350px;
+}
+
+.content-about {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin: 30px auto;
+
+}
+
+.content-about-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    border-bottom: 1px dashed black;
+
+
+}
+
+img {
+    margin: 10px 0;
+}
+
+.bottom-content-about {
+    margin: 20px auto;
+    padding-bottom: 10px;
+
 }
 
 .top-content .text-container {
@@ -111,6 +162,45 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes #box-1 {
+    background: teal;
+}
+
+.middle-content .boxes #box-2 {
+    background: gold;
+}
+
+.middle-content .boxes #box-3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes #box-4 {
+    background: coral;
+}
+
+.middle-content .boxes #box-5 {
+    background: crimson;
+}
+
+.middle-content .boxes #box-6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes #box-7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes #box-8 {
+    background: hotpink;
+}
+
+.middle-content .boxes #box-9 {
+    background: indigo;
+}
+
+.middle-content .boxes #box-10 {
+    background: dodgerblue;
+}
 
 .bottom-content {
     display: flex;
@@ -126,9 +216,17 @@ p {
     padding-right: 0;
 }
 
+.learn-more {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
 footer {
     width: 100%;
     background: black;
+    margin-top: 20px;
 }
 
 footer nav {
